@@ -16,9 +16,9 @@ Anti-Takeover is a subdomain takeover monitoring tool But for Blue team/internal
 
 > Integration with slack for realtime alerts/notification. 
 
-## Architecture :
+## Overview :
 
-Rough high level architecture of the tool is shown below :
+Rough high level Overview of the tool is shown below :
 
 ![Anti-Takeover](/Screenshots/antitakeover_2.PNG)
 
@@ -50,6 +50,40 @@ Monitor_Mode = 1      #REQUIRED ( values : 1 or 2 ( 1 - complete notification , 
 slack_integration = true        #REQUIRED ( values : false / true (case sensitive) )
 slack_Webhook = https://hooks.slack.com/services/yourslackwebhookurl  #REQUIRED if slack_integration is true
 ```
+#### Option Details :
+##### CF_EMAIL - This is the email associated with the cloudflare account.
 
+##### CF_MonitorSingleAccount - 
 
+                          Values :
+                                    > true
+                                    > false
+                          Description : 
+                                    if set to false, one needs to provide cloud flare account ID specifically in ####CF_AccountID for which monitoring is required. By default ,                                     its set to true. which monitors all accounts which are associated with the email.
+##### CF_AccountID -
 
+                          Values: AccountID of the cloudflare which requires monitoring.
+                          Description :
+                                      This needs to be provided if CF_MonitorSIngleAccount is set to true.
+##### Monitor_Mode - 
+                          Values:
+                                > 1
+                                > 2
+                          Description :
+                                  if set to '1', for each scan all the dangling/ misconfigured cname results are notified to the user.
+                                  if set to '2', Only newly added cnames which are misconfigured which were not present in previous scans are notified / alerted. ( for base scan /                                   first scan even if value is set to 2, it does a full scan.)
+                                  
+##### slack_integration - 
+                          Values:
+                                > true
+                                > false
+                                
+                           Description :
+                                  If value is set to 'true' slack alerts / notifications are trigerred.
+                                  if set to 'false' slack notifications are disabled.
+
+##### slack_Webhook -
+                          Values : slack web hook URL.
+                          
+                          Description : Slack web Hook URL generated for recieving incoming messages from anti-takeover.This is mandatory if slack_integration is set to value                                            'true'.
+                                  
