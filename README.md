@@ -6,7 +6,7 @@ Anti-Takeover is a sub domain monitoring tool for (blue/purple) team / internal 
 
 Anti-Takeover is a subdomain takeover monitoring tool But for Blue team/internal security team who manages DNS config on cloudflare. Currently it has capability to check 15+ external services for possible dangling/takeover issues.
 
-##Features:
+## Features:
 
 > Monitors more than a dozen external service pointed CNAME records for subdomain takeover issues.
 
@@ -16,7 +16,7 @@ Anti-Takeover is a subdomain takeover monitoring tool But for Blue team/internal
 
 > Integration with slack for realtime alerts/notification. 
 
-##Architecture
+## Architecture
 
 Rough high level architecture of the tool is shown below :
 
