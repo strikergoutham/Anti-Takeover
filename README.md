@@ -59,7 +59,7 @@ slack_Webhook = https://hooks.slack.com/services/yourslackwebhookurl  #REQUIRED 
                                     > true
                                     > false
                           Description : 
-                                    if set to false, one needs to provide cloud flare account ID specifically in ####CF_AccountID for which monitoring is required. By default ,                                     its set to true. which monitors all accounts which are associated with the email.
+                                    if set to false, one needs to provide cloud flare account ID specifically in ####CF_AccountID for which monitoring is required. By default , /its set to true. which monitors all accounts which are associated with the email.
 ##### CF_AccountID -
 
                           Values: AccountID of the cloudflare which requires monitoring.
@@ -71,7 +71,7 @@ slack_Webhook = https://hooks.slack.com/services/yourslackwebhookurl  #REQUIRED 
                                 > 2
                           Description :
                                   if set to '1', for each scan all the dangling/ misconfigured cname results are notified to the user.
-                                  if set to '2', Only newly added cnames which are misconfigured which were not present in previous scans are notified / alerted. ( for base scan /                                   first scan even if value is set to 2, it does a full scan.)
+                                  if set to '2', Only newly added cnames which are misconfigured which were not present in previous scans are notified / alerted. ( for base scan /first scan even if value is set to 2, it does a full scan.)
                                   
 ##### slack_integration - 
                           Values:
@@ -85,5 +85,5 @@ slack_Webhook = https://hooks.slack.com/services/yourslackwebhookurl  #REQUIRED 
 ##### slack_Webhook -
                           Values : slack web hook URL.
                           
-                          Description : Slack web Hook URL generated for recieving incoming messages from anti-takeover.This is mandatory if slack_integration is set to value                                            'true'.
+                          Description : Slack web Hook URL generated for recieving incoming messages from anti-takeover.This is mandatory if slack_integration is set to value /'true'.
                                   
