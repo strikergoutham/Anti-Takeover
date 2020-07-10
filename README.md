@@ -70,7 +70,7 @@ slack_Webhook = https://hooks.slack.com/services/yourslackwebhookurl  #REQUIRED 
                                 > 1
                                 > 2
                           Description :
-                                  if set to '1', for each scan all the dangling/ misconfigured cname results are notified to the user.
+                                  if set to '1', for each scan, all the dangling/ misconfigured cname results are notified to the user.
                                   if set to '2', Only newly added cnames which are misconfigured which were not present in previous scans are notified / alerted. ( for base scan /first scan even if value is set to 2, it does a full scan.)
                                   
 ##### slack_integration - 
