@@ -87,3 +87,18 @@ slack_Webhook = https://hooks.slack.com/services/yourslackwebhookurl  #REQUIRED 
                           
                           Description : Slack web Hook URL generated for recieving incoming messages from anti-takeover.This is mandatory if slack_integration is set to value /'true'.
                                   
+##### Note: All options are case sensitive!
+
+#### Now you are ready to run Auto-Takeover! Set it up as cron job for real time monitoring or run it as a standalone script.
+
+        >> Results are stored in files named "edgecases.json" and "vulnerable.json". ( Edge case scenarios are stored in edgecases.json.)
+        >> Removing both the files after the base scan / any scan , triggers in full scan .
+        
+#### Snapshot of test results:
+![Anti-Takeover](/Screenshots/antitakeover_3.PNG)
+        
+        
+Feel free to Fork the project, contribute, add new rules / notify for addition of new subdomains.( will be updated over the time.)        
+
+##### Developed with ♥️ by: Goutham Madhwaraj
+##### Do not use this tool for any malicious purpose. I am not responsible for any damage you cause / any non desirable consequences with the help of this tool.
