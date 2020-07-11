@@ -101,4 +101,6 @@ slack_Webhook = https://hooks.slack.com/services/yourslackwebhookurl  #REQUIRED 
 Feel free to Fork the project, contribute, add new rules / notify for addition of new subdomains.( will be updated over the time.)        
 
 ##### Developed with ♥️ by: Goutham Madhwaraj
+
+A big thanks everyone who has contributed to https://github.com/EdOverflow/can-i-take-over-xyz :)
 ##### Do not use this tool for any malicious purpose. I am not responsible for any damage you cause / any non desirable consequences with the help of this tool.
